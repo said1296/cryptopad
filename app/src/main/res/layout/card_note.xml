@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/cardNote"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_note_notes"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="15dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/note_title"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="20sp"
+        android:textColor="@color/offWhite"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/note_body"
+        android:fontFamily="@font/roboto"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:textColor="@color/offWhite"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/note_date_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="12sp"
+        android:textColor="@color/offWhiteHint"/>
+</LinearLayout>

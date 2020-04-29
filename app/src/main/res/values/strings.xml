@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CryptoPad</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="key_text">KEY</string>
+    <string name="new_pad">New encrypted pad</string>
+    <string name="new_key_hint">NEW KEY</string>
+    <string name="new_key_instructions">Create a key for this pad\n(case insensitive)</string>
+</resources>

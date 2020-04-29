@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgDark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.jgabrielfreitas.core.BlurImageView
+            android:id="@+id/bg_balls"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_balls"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jgabrielfreitas.core.BlurImageView
+            android:id="@+id/bg_balls_down"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_balls_down"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/new_key_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/key_text"
+            android:gravity="center"
+            android:hint="@string/new_key_hint"
+            android:inputType="textPassword"
+            android:paddingHorizontal="15dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@id/newKeyTextBottomGuideline"
+            app:layout_constraintLeft_toRightOf="@id/newKeyTextLeftGuideLine"
+            app:layout_constraintRight_toLeftOf="@id/newKeyTextRightGuideline"
+            app:layout_constraintTop_toBottomOf="@id/newKeyTextTopGuideline" />
+
+        <TextView
+            android:id="@+id/newKeyInstructions"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/new_key_instructions"
+            android:textColor="@color/offWhite"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintTop_toTopOf="@id/newPadTopGuideline"
+            app:layout_constraintBottom_toTopOf="@id/newPadBottomGuideline"
+            app:layout_constraintLeft_toLeftOf="@id/newKeyTextLeftGuideLine"
+            app:layout_constraintRight_toRightOf="@id/newKeyTextRightGuideline" />
+
+        <TextView
+            android:id="@+id/newKeyError"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/error"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintTop_toBottomOf="@id/newKeyErrorTopGuide"
+            app:layout_constraintLeft_toRightOf="@id/newKeyTextLeftGuideLine"
+            app:layout_constraintRight_toLeftOf="@id/newKeyTextRightGuideline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/newKeyTextTopGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.48" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/newKeyTextBottomGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.53" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/newKeyTextLeftGuideLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.18" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/newKeyTextRightGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.82" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/newPadTopGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.39" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/newPadBottomGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/newKeyErrorTopGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.56"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+
+
+
+

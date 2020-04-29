@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item  name="editTextStyle">@style/customEditText</item>
+        <item name="android:navigationBarColor">@color/bgDark</item>
+        <item name="android:textViewStyle">@style/customTextView</item>
+    </style>
+
+    <style name="customEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColorHint">@color/bgDark</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:letterSpacing">0.5</item>
+        <item name="android:shadowColor">#402B2B2B</item>
+        <item name="android:shadowDx">-5</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
+    <style name="customTextView" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_login">
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.prin.notes.views.Login"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragment_login_to_create"
+            app:destination="@id/create" />
+        <action
+            android:id="@+id/action_fragment_login_to_notes"
+            app:destination="@id/notes" />
+    </fragment>
+    <fragment
+        android:id="@+id/create"
+        android:name="com.prin.notes.views.Create"
+        android:label="create" >
+        <action
+            android:id="@+id/action_create_to_notes"
+            app:destination="@id/notes" />
+    </fragment>
+    <fragment
+        android:id="@+id/notes"
+        android:name="com.prin.notes.views.Notes"
+        android:label="notes" >
+        <action
+            android:id="@+id/action_notes_to_note"
+            app:destination="@id/note" />
+    </fragment>
+    <fragment
+        android:id="@+id/note"
+        android:name="com.prin.notes.views.Note"
+        android:label="note" >
+        <argument
+            android:name="notePos"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_note_to_notes"
+            app:destination="@id/notes" />
+    </fragment>
+
+</navigation>
